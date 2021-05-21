@@ -1,4 +1,5 @@
 import React from "react";
+import ContactFilter from "../contacts/ContactFilter";
 import ContactFrom from "../contacts/ContactFrom";
 import Contacts from "../contacts/Contacts";
 
@@ -8,7 +9,10 @@ export const Home = () => {
       <div>
         <ContactFrom />
       </div>
-      <div>{<Contacts />}</div>
+      <div>
+        <ContactFilter />
+        {<Contacts />}
+      </div>
     </div>
   );
 };
