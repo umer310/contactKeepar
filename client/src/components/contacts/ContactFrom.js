@@ -50,7 +50,13 @@ const ContactFrom = () => {
       <h2 className="text-Primay">
         {current ? "Edit Contact" : "Add Contact"}
       </h2>
-      <input type="text" placeholder="name" value={name} onChange={onChange} />
+      <input
+        type="text"
+        placeholder="name"
+        name="name"
+        value={name}
+        onChange={onChange}
+      />
       <input
         type="email"
         placeholder="Email"
