@@ -13,13 +13,14 @@ app.use(express.json({ extended: false }));
 //   res.json({ msg: "Welcom  to the Contact keeper APi" })
 // );
 
-//Define Routes
+//Define Routes t
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/contacts", require("./routes/contacts"));
 
 //Server static  assets in productopm
-if (process.env.NOOD_ENV === "production") {
+if (process.env.NODE_ENV === "production") {
+  // Set static folder
   app.use(express.static("client/build"));
 
   app.get("*", (req, res) =>
