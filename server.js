@@ -9,9 +9,9 @@ connectDB();
 //Init Middleweare
 app.use(express.json({ extended: false }));
 
-app.get("/", (req, res) =>
-  res.json({ msg: "Welcom  to the Contact keeper APi" })
-);
+// app.get("/", (req, res) =>
+//   res.json({ msg: "Welcom  to the Contact keeper APi" })
+// );
 
 //Define Routes
 app.use("/api/users", require("./routes/users"));
