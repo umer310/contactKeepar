@@ -13,7 +13,7 @@ app.use(express.json({ extended: false }));
 //   res.json({ msg: "Welcom  to the Contact keeper APi" })
 // );
 
-//Define Routes test
+//Define Routes
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/contacts", require("./routes/contacts"));
